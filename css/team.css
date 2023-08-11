@@ -1,0 +1,125 @@
+.teachers {
+    padding: 5rem 0 3rem 0;
+    background: rgba(190, 220, 227, 1);
+}
+
+.teachers__title {
+    font-size: 2.66rem;
+    color: rgba(80, 110, 117, 1);
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 3rem;
+    font-weight: 700;
+}
+
+.teachers__content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.teacher {
+    width: 48.66%;
+    padding: 2rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    background-color: rgba(100, 130, 137, 1);
+}
+
+.teacher__video {
+    width: 50%;
+    position: relative;
+}
+
+.teacher__video img {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.stars {
+    position: absolute;
+    left: 0;
+    bottom: .66rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: .33rem 1rem .33rem 1rem;
+}
+
+.star {
+    width: 7%;
+    margin-right: .3rem;
+}
+
+.star img {
+    width: 100%;
+}
+
+.teacher__txt {
+    padding-left: 2rem;
+    width: 50%;
+    text-align: right;
+}
+
+.teacher__name {
+    font-size: 1.66rem;
+    color: rgba(255, 255, 255, 1);
+    line-height: 2rem;
+    padding-bottom: 1rem;
+}
+
+.teacher__direction {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 1rem;
+}
+
+.teacher__education {
+    font-size: 1rem;
+    line-height: 1.33rem;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 1rem;
+}
+
+.teacher__practice {
+    font-size: 1rem;
+    line-height: 1.33rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.teacher__link {
+    display: inline-block;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 1);
+    padding: 1.66rem;
+    text-decoration: none;
+    transition: .5s;
+    position: relative;
+    z-index: 1;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.teacher__link:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15%;
+    width: 3.33rem;
+    height: 3.33rem;
+    border-radius: 3.33rem;
+    background-color: rgb(201, 74, 0);
+    transition: .5s;
+    z-index: -1;
+}
+
+.teacher__link:hover:before {
+    width: 100%;
+}

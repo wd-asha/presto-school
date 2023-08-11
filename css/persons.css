@@ -1,0 +1,25 @@
+.persons__content {
+    width: 100%;
+    padding: 0 6rem;
+    margin-bottom: 0;
+}
+
+.card {
+    width: 99%;
+    margin: 0 auto;
+    position: sticky;
+    transition: .8s;
+    top: 2rem;
+    transform-origin: center top;
+}
+
+.person__cart {
+    width: 100%;
+    position: relative;
+}
+
+.stack-cards__item {
+    position: sticky;
+    top: 2rem;
+    transform-origin: center top;
+}
