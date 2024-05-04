@@ -16,9 +16,9 @@
 
 <div id="hidePX"></div>
 
-<div class="online__content_link">
+<!--<div class="online__content_link">
     <div class="online_link">Онлайн запись</div>
-</div>
+</div>-->
 
 <div class="wrapper__header">
     <header class="header">
@@ -37,6 +37,21 @@
 </div>
 
 <div class="wrapper__nav">
+    <div class="mobile__nav">
+        <div class="nav__item" id="burger">
+            <a href="#" class="nav__link">Меню</a>
+        </div>
+        <div class="nav__item">
+            <a href="#popupLogin" class="nav__link popup__link">Личный кабинет</a>
+        </div>
+        <div class="subPanel" id="subPanel">
+            <a href="#about" class="mobile-nav__link">О нас</a>
+            <a href="#directions" class="mobile-nav__link">Направления</a>
+            <a href="#prices" class="mobile-nav__link">Стоимость</a>
+            <a href="team.html" class="mobile-nav__link">Преподователи</a>
+            <a href="about.html#tabs" class="mobile-nav__link">Контакты</a>
+        </div>
+    </div>
     <nav class="nav">
         <div class="nav__item">
             <a href="#about" class="nav__link">О нас</a>
@@ -60,15 +75,12 @@
 </div>
 
 <section class="main">
-    <div class="video__overlay"></div>
     <div class="main__content">
         <div class="main__content_text">
             <h1>Индивидуальные<br>
                 уроки для детей<br>
                 и взрослых</h1>
-            <h5>Уроки гитары,  укулеле, вокала, фортепиано,<br>
-                барабанов, скрипки, виолончели, саксофона,<br>
-                флейты, кларнета, сольфеджио</h5>
+            <h5>Уроки гитары,  укулеле, вокала, фортепиано, барабанов, скрипки, виолончели, саксофона, флейты, кларнета, сольфеджио</h5>
             <h5>Раннее музыкальное развитие для детей</h5>
             <div class="main__content_link">
                 <a href="#popupLess" class="main_link">Записаться на бесплатный урок</a>
@@ -78,6 +90,7 @@
     <video autoplay muted loop id="myVideo">
         <source src="Presto_0.mp4" type="video/mp4">
     </video>
+    <div class="video__overlay"></div>
 </section>
 
 <section class="about" id="about">
@@ -109,15 +122,6 @@
                 Выезд преподавателя на дом
             </div>
         </a>
-        <!--<div class="about__item">
-            <div class="about__item-img">
-                <img src="images/saxophone.png" alt="">
-                <img src="images/saxophone-white.png" alt="">
-            </div>
-            <div class="about__item-txt">
-                Выдаем инструменты на занятие
-            </div>
-        </div>-->
         <a href="#popupTime" class="about__item">
             <div class="about__item-img">
                 <img src="images/clock.png" alt="">
@@ -209,7 +213,7 @@
             <img src="images/direction/guitar.jpg" alt="">
             <div class="direction__title">Гитара</div>
             <div class="overlay__direction">
-                Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут
+                Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут<br>
                 <a href="#popupLess" class="direction__link">Пробный урок</a>
             </div>
         </div>
@@ -217,7 +221,7 @@
             <img src="images/direction/drums.jpg" alt="">
             <div class="direction__title">Барабаны</div>
             <div class="overlay__direction">
-                Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут
+                Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут<br>
                 <a href="#popupLess" class="direction__link">Пробный урок</a>
             </div>
         </div>
@@ -225,7 +229,7 @@
             <img src="images/direction/vocal.jpg" alt="">
             <div class="direction__title">Вокал</div>
             <div class="overlay__direction">
-                Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут
+                Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут<br>
                 <a href="#popupLess" class="direction__link">Пробный урок</a>
             </div>
         </div>
@@ -233,7 +237,7 @@
             <img src="images/direction/piano.jpg" alt="">
             <div class="direction__title">Фортепиано</div>
             <div class="overlay__direction">
-                Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут
+                Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут<br>
                 <a href="#popupLess" class="direction__link">Пробный урок</a>
             </div>
         </div>
@@ -241,14 +245,15 @@
             <img src="images/direction/sax.jpg" alt="">
             <div class="direction__title">Саксафон</div>
             <div class="overlay__direction">
-                Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут
+                Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут<br>
                 <a href="#popupLess" class="direction__link">Пробный урок</a>
             </div>
         </div>
         <div class="direction">
             <img src="images/direction/skrip.jpg" alt="">
             <div class="direction__title">Скрипка</div>
-            <div class="overlay__direction">\Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут
+            <div class="overlay__direction">
+                Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут<br>
                 <a href="#popupLess" class="direction__link">Пробный урок</a></div>
         </div>
         <div class="direction">
@@ -256,7 +261,7 @@
             <div class="overlay"></div>
             <div class="direction__title">Флейта</div>
             <div class="overlay__direction">
-                Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут
+                Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут<br>
                 <a href="#popupLess" class="direction__link">Пробный урок</a>
             </div>
         </div>
@@ -265,7 +270,7 @@
             <div class="overlay"></div>
             <div class="direction__title">Кларнет</div>
             <div class="overlay__direction">
-                Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут
+                Первое занятие — бесплатно. Вы можете сходить на все наши направления по одному разу и уже после выбрать, где вам больше всего понравилось. Пробный урок – это полноценное занятие 45 минут<br>
                 <a href="#popupLess" class="direction__link">Пробный урок</a>
             </div>
         </div>
@@ -351,7 +356,7 @@
             <h4 class="pricing__price">6 500 &#8381;</h4>
             <p class="pricing__desc">1 занятие — 1 625 &#8381;</p>
             <p class="pricing__note">
-                <span>-10%</span>при оплате в день пробного урока</p>
+                <span>-10%</span>в день пробного урока</p>
             <div class="pricing__link">Выбрать</div>
             <div class="pricing__count pricing__count_1">Индивидуальные занятия</div>
         </div>
@@ -361,7 +366,7 @@
             <h4 class="pricing__price">12 000 &#8381;</h4>
             <p class="pricing__desc">1 занятие — 1 500 &#8381;</p>
             <p class="pricing__note">
-                <span>-10%</span>при оплате в день пробного урока</p>
+                <span>-10%</span>в день пробного урока</p>
             <div class="pricing__link">Выбрать</div>
             <div class="pricing__count pricing__count_2">Индивидуальные занятия</div>
         </div>
@@ -371,7 +376,7 @@
             <h4 class="pricing__price">17 500 &#8381;</h4>
             <p class="pricing__desc">1 занятие — 1 458 &#8381;</p>
             <p class="pricing__note">
-                <span>-10%</span>при оплате в день пробного урока</p>
+                <span>-10%</span>в день пробного урока</p>
             <div class="pricing__link">Выбрать</div>
             <div class="pricing__count pricing__count_3">Индивидуальные занятия</div>
         </div>
@@ -381,7 +386,7 @@
             <h4 class="pricing__price">3 500 &#8381;</h4>
             <p class="pricing__desc">1 занятие — 875 &#8381;</p>
             <p class="pricing__note">
-                <span>-10%</span>при оплате в день пробного урока</p>
+                <span>-10%</span>в день пробного урока</p>
             <div class="pricing__link">Выбрать</div>
             <div class="pricing__count pricing__count_4">Груповые занятия</div>
         </div>
@@ -391,7 +396,7 @@
             <h4 class="pricing__price">6 500 &#8381;</h4>
             <p class="pricing__desc">1 занятие — 812 &#8381;</p>
             <p class="pricing__note">
-                <span>-10%</span>при оплате в день пробного урока</p>
+                <span>-10%</span>в день пробного урока</p>
             <div class="pricing__link">Выбрать</div>
             <div class="pricing__count pricing__count_5">Групповые занятия</div>
         </div>
@@ -401,7 +406,7 @@
             <h4 class="pricing__price">9 500 &#8381;</h4>
             <p class="pricing__desc">1 занятие — 791 &#8381;</p>
             <p class="pricing__note">
-                <span>-10%</span>при оплате в день пробного урока</p>
+                <span>-10%</span>в день пробного урока</p>
             <div class="pricing__link">Выбрать</div>
             <div class="pricing__count pricing__count_6">Групповые занятия</div>
         </div>
@@ -418,7 +423,7 @@
             <ol class="certificate__list-rounded">
                 <li>Сертификат можно использовать в течении года на любое направление</li>
                 <li> Прежде чем активировать его, вы сможете сходить на пробные, бесплатные занятия хоть ко всем нашим преподавателям и только после этого принять решение на чем и у кого будете учиться</li>
-                <!--<li>Мы можем бесплатно сделать для Вас именной сертификат или изменить его дизайн. После того как Вы утвердите макет, отправим его Вам на почту. Такого сертификата не будет больше ни у кого, он будет в единственном экземпляре</li>-->
+                &lt;!&ndash;<li>Мы можем бесплатно сделать для Вас именной сертификат или изменить его дизайн. После того как Вы утвердите макет, отправим его Вам на почту. Такого сертификата не будет больше ни у кого, он будет в единственном экземпляре</li>&ndash;&gt;
                 <li>Наш сертификат может стать очень необычным и полезным подарком</li>
             </ol>
         </div>
@@ -428,25 +433,25 @@
 <div class="bg-footer">
     <div class="footer">
         <div class="footer-item">
-            <div class="header__logo">
+            <a href="index.html" class="header__logo">
                 <h2>PRESTO</h2>
                 <h3>играть&nbsp;может&nbsp;каждый</h3>
-            </div>
+            </a>
         </div>
         <div class="footer-item">
             <a href="team.html">Преподователи</a>
             <a href="#about">О школе</a>
-            <a href="#directions">Направления<br>подготовки</a>
+            <a href="#directions">Направления подготовки</a>
         </div>
         <div class="footer-item">
             <a href="#certificate">Сертификат</a>
             <a href="about.html#tabs">Контакты</a>
-            <div>Политика<br>конфиденциальности</div>
+            <div>Политика конфиденциальности</div>
         </div>
         <div class="footer-item">
             <a href="#popupLogin">Личный кабинет</a>
             <a href="#popupCamp">Музыкальный лагерь</a>
-            <a href="#popupShop">Магазин музыкальных<br>инструментов</a>
+            <a href="#popupShop">Магазин музыкальных инструментов</a>
         </div>
     </div>
 </div>
@@ -501,7 +506,7 @@
                 <p>Для детей от 9 до 17 лет</p>
                 <p>Presto-camp – это летний лагерь для учеников школы. Место, в котором дету учатся создавать, слушать и испольнять музыку</p>
                 <p>На протяжении всего отдыха (10 дней), дети полностью погружены в музыкальную, творческую атмосферу</p>
-                <a href="#" class="login__link">Подробнее о лагере</a>
+                <a href="#" class="login__link">Подробнее</a>
             </div>
         </div>
     </div>
@@ -516,7 +521,7 @@
                 <img src="images/popup/arenda.png" alt="">
                 <p>Если вы по какой-то причине пока не готовы купить себе музыкальный инструмент, мы можем предоставить его Вам в аренду. Все привезем к вам домой, подключим и расскажем как пользоваться</p>
                 <p>Пользуйтесь сколько будет нужно, а когда решите купить свой или просто перестанете заниматься, вернете инструмент обратно</p>
-                <a href="#" class="login__link">Заказать инструмент</a>
+                <a href="#" class="login__link">Заказать</a>
             </div>
         </div>
     </div>
@@ -531,7 +536,7 @@
                 <img src="images/popup/tama.jpg" alt="">
                 <p>В Presto есть свой интернет-магазин музыкальных инструментов и оборудования. Все что вы закажете, мы привезем в школу, проверим и настроим. Вы сможете забрать настроенный инструмент перед занятием</p>
                 <p>Скидка 5% на все инстументы для учеников школы Presto</p>
-                <a href="#" class="login__link">В магазин за инструментом</a>
+                <a href="#" class="login__link">В магазин</a>
             </div>
         </div>
     </div>
@@ -546,7 +551,7 @@
                 <img src="images/popup/app.png" alt="">
                 <p>Мобильное приложение музыкальной студии Presto - это удобный способ отменить или перенести урок. Вы всегда будете в курсе количества занятий в вашем абонементе, а так же сможете следить за отмеченными уроками</p>
                 <p>Записаться на пробное занятие также можно при помощи нашего мобильного приложения</p>
-                <a href="#" class="login__link">В App Store за приложением</a>
+                <a href="#" class="login__link">В App Store</a>
             </div>
         </div>
     </div>
@@ -560,7 +565,7 @@
             <div class="popup__text">
                 <img src="images/promo.jpeg" alt="">
                 <p>Мы несем ответственность за каждого преподавателя, который к вам приедет. Мы уже проверили его образование и опыт работы. Вы можете быть уверены, что приедет профессионал</p>
-                <a href="#" class="login__link">Заказать урок на дом</a>
+                <a href="#" class="login__link">Заказать урок</a>
             </div>
         </div>
     </div>
@@ -664,6 +669,14 @@
         setInterval(function(){
             Showing()
         }, 35000);
+
+        let burger = document.querySelector('#burger');
+        let subPanel = document.querySelector('.subPanel');
+
+        burger.addEventListener('click', function () {
+            console.log(subPanel);
+            subPanel.classList.toggle('subPanel__open');
+        })
 
     });
 </script>

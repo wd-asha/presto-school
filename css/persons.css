@@ -3,6 +3,11 @@
     padding: 0 6rem;
     margin-bottom: 0;
 }
+@media (max-width: 1280px) {
+    .persons__content {
+        padding: 0 calc(0rem + (6 - 0) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .card {
     width: 99%;
@@ -11,6 +16,7 @@
     transition: .8s;
     top: 2rem;
     transform-origin: center top;
+    background: rgba(190, 220, 227, 1);
 }
 
 .person__cart {
@@ -22,4 +28,9 @@
     position: sticky;
     top: 2rem;
     transform-origin: center top;
+}
+@media (max-width: 1280px) {
+    .stack-cards__item {
+        top: calc(0rem + (2 - 0) * ((100vw - 20rem) / (80 - 20)))
+    }
 }

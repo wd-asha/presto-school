@@ -16,29 +16,42 @@
 
 <div id="hidePX"></div>
 
-<div class="online__content_link">
+<!--<div class="online__content_link">
     <div class="online_link">Онлайн запись</div>
-</div>
+</div>-->
 
 <div class="wrapper__header">
     <header class="header">
-        <div class="header__logo">
-            <a href="index.html">
-                <h2>PRESTO</h2>
-                <h3>играть&nbsp;может&nbsp;каждый</h3>
-            </a>
-        </div>
+        <a href="index.html" class="header__logo">
+            <h2>PRESTO</h2>
+            <h3>играть&nbsp;может&nbsp;каждый</h3>
+        </a>
         <div class="datetime">
             <p>c 10:00 до 21:00</p>
             <p>без выходных</p>
         </div>
         <div class="phone">
-                <a href="#" class="phone_link">+7(495)006-8737</a>
+            <a href="#" class="phone_link">+7(495)006-8737</a>
         </div>
     </header>
 </div>
 
 <div class="wrapper__nav">
+    <div class="mobile__nav">
+        <div class="nav__item" id="burger">
+            <a href="#" class="nav__link">Меню</a>
+        </div>
+        <div class="nav__item">
+            <a href="#popupLogin" class="nav__link popup__link">Личный кабинет</a>
+        </div>
+        <div class="subPanel" id="subPanel">
+            <a href="index.html#about" class="mobile-nav__link">О нас</a>
+            <a href="index.html#directions" class="mobile-nav__link">Направления</a>
+            <a href="index.html#prices" class="mobile-nav__link">Стоимость</a>
+            <a href="team.html" class="mobile-nav__link">Преподователи</a>
+            <a href="about.html#tabs" class="mobile-nav__link">Контакты</a>
+        </div>
+    </div>
     <nav class="nav">
         <div class="nav__item">
             <a href="index.html#about" class="nav__link">О нас</a>
@@ -53,10 +66,10 @@
             <a href="team.html" class="nav__link">Преподователи</a>
         </div>
         <div class="nav__item">
-            <a href="#tabs" class="nav__link">Контакты</a>
+            <a href="about.html#tabs" class="nav__link">Контакты</a>
         </div>
         <div class="nav__item">
-            <a href="#popupLogin" class="nav__link">Личный кабинет</a>
+            <a href="#popupLogin" class="nav__link popup__link">Личный кабинет</a>
         </div>
     </nav>
 </div>
@@ -194,12 +207,10 @@
 <div class="bg-footer">
     <div class="footer">
         <div class="footer-item">
-            <div class="footer__logo">
-                <a href="index.html">
+            <a href="index.html" class="header__logo">
                     <h2>PRESTO</h2>
                     <h3>играть&nbsp;может&nbsp;каждый</h3>
-                </a>
-            </div>
+            </a>
         </div>
         <div class="footer-item">
             <a href="team.html">Преподователи</a>
@@ -252,7 +263,7 @@
                 <p>Для детей от 9 до 17 лет</p>
                 <p>Presto-camp – это летний лагерь для учеников школы. Место, в котором дету учатся создавать, слушать и испольнять музыку</p>
                 <p>На протяжении всего отдыха (10 дней), дети полностью погружены в музыкальную, творческую атмосферу</p>
-                <a href="#" class="login__link">Подробнее о лагере</a>
+                <a href="#" class="login__link">Подробнее</a>
             </div>
         </div>
     </div>
@@ -267,7 +278,7 @@
                 <img src="images/popup/tama.jpg" alt="">
                 <p>В Presto есть свой интернет-магазин музыкальных инструментов и оборудования. Все что вы закажете, мы привезем в школу, проверим и настроим. Вы сможете забрать настроенный инструмент перед занятием</p>
                 <p>Скидка 5% на все инстументы для учеников школы Presto</p>
-                <a href="#" class="login__link">В магазин за инструментом</a>
+                <a href="#" class="login__link">В магазин</a>
             </div>
         </div>
     </div>
@@ -288,13 +299,21 @@
         slider2.classList.add("hideSlider");
         slider.classList.remove("hideSlider");
         slide222.classList.add('slide-active');
-    })
+    });
     atab2.addEventListener("click", function () {
         atab1.classList.remove("active");
         atab2.classList.add("active");
         slider.classList.add("hideSlider");
         slider2.classList.remove("hideSlider");
         slideStart.classList.add('slide-active');
+    });
+
+    let burger = document.querySelector('#burger');
+    let subPanel = document.querySelector('.subPanel');
+
+    burger.addEventListener('click', function () {
+        console.log(subPanel);
+        subPanel.classList.toggle('subPanel__open');
     })
 </script>
 

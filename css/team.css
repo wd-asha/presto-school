@@ -1,6 +1,13 @@
 .teachers {
-    padding: 5rem 0 3rem 0;
+    padding: 5rem 3% 3rem 3%;
     background: rgba(190, 220, 227, 1);
+}
+@media (max-width: 1280px) {
+    .teachers {
+        padding:
+                calc(1.66rem + (5 - 1.66) * ((100vw - 20rem) / (80 - 20))) 3%
+                calc(0rem + (3 - 0) * ((100vw - 20rem) / (80 - 20))) 3%;
+    }
 }
 
 .teachers__title {
@@ -10,6 +17,12 @@
     text-align: center;
     padding-bottom: 3rem;
     font-weight: 700;
+}
+@media (max-width: 1280px) {
+    .teachers__title {
+        font-size: calc(1.33rem + (2.66 - 1.33) * ((100vw - 20rem) / (80 - 20)));
+        padding-bottom: calc(1rem + (3 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
 }
 
 .teachers__content {
@@ -24,17 +37,46 @@
 .teacher {
     width: 48.66%;
     padding: 2rem;
-    border-radius: .5rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 2rem;
     background-color: rgba(100, 130, 137, 1);
+    flex-wrap: wrap;
+    border-top: 2px solid rgba(190, 220, 227, 1);
+}
+@media (max-width: 1280px) {
+    .teacher {
+        padding: calc(1rem + (2 - 1) * ((100vw - 20rem) / (80 - 20)));
+        margin-bottom: calc(1rem + (2 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+@media (max-width: 600px) {
+    .teacher {
+        width: 100%;
+    }
+}
+
+.teacher__hide {
+
+}
+@media (max-width: 600px) {
+    .teacher__hide {
+        display: none;
+    }
 }
 
 .teacher__video {
     width: 50%;
     position: relative;
+}
+@media (max-width: 1349px) {
+    .teacher__video {
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+        margin-bottom: 1rem;
+    }
 }
 
 .teacher__video img {
@@ -66,12 +108,31 @@
     width: 50%;
     text-align: right;
 }
+@media (max-width: 1349px) {
+    .teacher__txt {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+}
 
 .teacher__name {
     font-size: 1.66rem;
     color: rgba(255, 255, 255, 1);
     line-height: 2rem;
     padding-bottom: 1rem;
+}
+@media (max-width: 1280px) {
+    .teacher__name {
+        font-size: calc(1.1rem + (1.33 - 1.1) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1rem + (2 - 1) * ((100vw - 20rem) / (80 - 20)));
+        padding-bottom: calc(.5rem + (1 - .5) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+@media (max-width: 600px) {
+    .teacher__name {
+        margin-top: 1rem;
+    }
 }
 
 .teacher__direction {
@@ -80,6 +141,13 @@
     color: rgba(255, 255, 255, 1);
     padding-bottom: 1rem;
 }
+@media (max-width: 1280px) {
+    .teacher__direction {
+        font-size: calc(.9rem + (1.2 - .9) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1.15rem + (1.4 - 1.15) * ((100vw - 20rem) / (80 - 20)));
+        padding-bottom: calc(.5rem + (1 - .5) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .teacher__education {
     font-size: 1rem;
@@ -87,12 +155,26 @@
     color: rgba(255, 255, 255, 1);
     padding-bottom: 1rem;
 }
+@media (max-width: 1280px) {
+    .teacher__education {
+        font-size: calc(.8rem + (1 - .8) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1.15rem + (1.33 - 1.15) * ((100vw - 20rem) / (80 - 20)));
+        padding-bottom: calc(.5rem + (1 - .5) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .teacher__practice {
     font-size: 1rem;
     line-height: 1.33rem;
     color: rgba(255, 255, 255, 1);
 }
+@media (max-width: 1280px) {
+    .teacher__practice {
+        font-size: calc(.8rem + (1 - .8) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1.15rem + (1.33 - 1.15) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
 
 .teacher__link {
     display: inline-block;
@@ -106,18 +188,32 @@
     margin-top: 1rem;
     cursor: pointer;
 }
+@media (max-width: 1280px) {
+    .teacher__link {
+        font-size: calc(.9rem + (1.1 - .9) * ((100vw - 20rem) / (80 - 20)));
+        padding: calc(1rem + (1.66 - 1) * ((100vw - 20rem) / (80 - 20)));
+        margin-top: calc(0rem + (1 - 0) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
 
 .teacher__link:before {
     content: "";
     position: absolute;
     left: 0;
-    top: 15%;
+    top: .8rem;
     width: 3.33rem;
     height: 3.33rem;
     border-radius: 3.33rem;
     background-color: rgb(201, 74, 0);
     transition: .5s;
     z-index: -1;
+}
+@media (max-width: 1280px) {
+    .teacher__link:before {
+        width: calc(2.33rem + (3.33 - 2.33) * ((100vw - 20rem) / (80 - 20)));
+        height: calc(2.33rem + (3.33 - 2.33) * ((100vw - 20rem) / (80 - 20)));
+        top: calc(.5rem + (.8 - .5) * ((100vw - 20rem) / (80 - 20)));
+    }
 }
 
 .teacher__link:hover:before {
